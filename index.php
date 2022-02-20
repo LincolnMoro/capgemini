@@ -95,12 +95,12 @@ if(isset($_POST['questao3'])) {
 
     echo "<div class='box'><h2>Resultado</h2>";
 
-   for($i = 0; $i < $anagram; $i++) {
-       for($j = 1; $j <= $anagram; $j++) {
-           var_dump($anagram);
+   for($i = 0; $i < sizeof($anagram); $i++) {
+       for($j = $i + 1; $j < sizeof($anagram); $j++) {
            if($anagram[$i] == $anagram[$j]) {
+               var_dump($i, $j);
                 $count == $count++;
-                if($i + 1 > $j) { 
+                if($i + 1 < $j) { 
                     $count == $count++;
                 }
            }
