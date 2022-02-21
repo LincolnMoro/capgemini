@@ -78,7 +78,7 @@ if(isset($_POST['questao1'])) {
         <label for="anagram">Digite o valor aqui</label>
     </div>
     <div class="form-field">
-        <input type="text" id="password" name="password" class="input-value">
+        <input type="text" id="password" name="password" class="input-value" maxlenght="255">
     </div>
     
     <div class="form-field">
@@ -132,7 +132,7 @@ if(isset($_POST['questao2'])) {
         <label for="anagram">Digite o valor aqui</label>
     </div>
     <div class="form-field">
-        <input type="text" id="anagram" name="anagram" class="input-value">
+        <input type="text" id="anagram" name="anagram" class="input-value" maxlenght="255">
     </div>
     
     <div class="form-field">
